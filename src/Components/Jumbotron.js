@@ -35,14 +35,14 @@ const Jumbotron = () => {
         background: gradient, // Aplica el degradado actual como fondo
       }} >
         <NavigationBar />
- <div className="px-4 text-white  bg-teal-400   tet mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 className="mb-4 text-4xl font-bold font-manrope p-9 tracking-tight leading-none text-gray-50	 md:text-5xl lg:text-6xl">IP - Web Solutions</h1>
+ <div className="px-4 text-blue-300	mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 className="mb-4 text-4xl font-bold tracking-tight p-4 leading-none text-gray-50	 md:text-5xl lg:text-6xl">IP  Web Solutions</h1>
   
-        <p className="mb-8 text-2xl font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
+        <p className="mb-8 text-2xl font-normal text-blue-300 lg:text-2xl sm:px-16 lg:px-48">
           Aumenta tu visibilidad, tus ventas y tus procesos productivos
         </p>
-<div className='border border-teal-700 mb-8 mt-8 rounded-lg bg-teal-500'
->   <p className="mb-8 text-lg font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
+<div className='mb-8 mt-8 rounded-lg '
+>   <p className="mb-8 text-lg font-normal text-blue-300  p-4 lg:text-2xl sm:px-16 lg:px-48">
 Creamos apps y páginas web que te ayudarán a:</p>
 
         <ul className='text-gray-50 text-2xl'>
@@ -52,13 +52,13 @@ Creamos apps y páginas web que te ayudarán a:</p>
           <li className="mb-4 ">Mejorar tu eficiencia</li>
         </ul>
 
-        <p className="mb-8 text-lg font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
-         Te ayudaremos a crear una solución digital personalizada que se adapte a las necesidades de tu negocio.
+        <p className="mb-8 text-lg font-normal text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
+         Te ayudaremos a crear una solución digital personalizada que se adapte a las necesidades de tu negocio
         </p></div>
      
 
         <div className="flex flex-col bg-teal-400 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
-          <a href="#Contacto" className="inline-flex justify-center text-2xl font-manrope items-center py-3 px-5  font-medium text-white 
+          <a href="#Contacto" className="inline-flex justify-center text-2xl items-center py-3 px-5  font-medium text-gray-200 
           rounded-lg border-2 border-teal-700 bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-800 m-8">
             Solicita una cotización gratis
             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
