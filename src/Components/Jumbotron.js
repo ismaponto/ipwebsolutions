@@ -8,13 +8,15 @@ const Jumbotron = () => {
     const handleMouseMove = (e) => {
       // Calcula los valores de los colores del degradado en función de la posición del puntero
       const x = (e.clientX / window.innerWidth) * 100;
-
       // Calcula los colores con transparencia
       const color1 = `#91D5D3 ${x}%`;
       const color2 = `rgba(0, 128, 128, 0.8)`;
+      const color = `#91D5D3`;
+      const color2trans = `rgba(0, 128, 128, 0.0)`;
 
       // Actualiza el estado con el nuevo degradado
       setGradient(`linear-gradient(to right, ${color1}, ${color2})`);
+      setGradient(`linear-gradient(to bottom, ${color}, ${color2trans})`)
     };
 
     // Agrega un evento para escuchar los movimientos del mouse
@@ -33,7 +35,7 @@ const Jumbotron = () => {
         backgroundImage: `url(${ordiimg})`,
         background: gradient, // Aplica el degradado actual como fondo
       }} >
- <div className="px-4  mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+ <div className="px-4 text-white mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 className="mb-4 text-4xl font-bold font-manrope p-9 tracking-tight leading-none text-gray-50	 md:text-5xl lg:text-6xl">IP - Web Solutions</h1>
   
         <p className="mb-8 text-2xl font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
