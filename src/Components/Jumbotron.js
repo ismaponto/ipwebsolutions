@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ordiimg from "./jumbotron/ordi.jpg";
+import NavigationBar from './NavigationBar';
 
 const Jumbotron = () => {
   const [gradient, setGradient] = useState('linear-gradient(to right, #91D5D3, rgba(0, 128, 128, 0.8))'); // Color sepia en lugar de blanco
@@ -32,17 +32,17 @@ const Jumbotron = () => {
     <section
       className="bg-center bg-no-repeat bg-cover bg-blend-multiply"
       style={{
-        backgroundImage: `url(${ordiimg})`,
         background: gradient, // Aplica el degradado actual como fondo
       }} >
- <div className="px-4 text-white mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <NavigationBar />
+ <div className="px-4 text-white  bg-teal-400   tet mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 className="mb-4 text-4xl font-bold font-manrope p-9 tracking-tight leading-none text-gray-50	 md:text-5xl lg:text-6xl">IP - Web Solutions</h1>
   
         <p className="mb-8 text-2xl font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
           Aumenta tu visibilidad, tus ventas y tus procesos productivos
         </p>
-
-        <p className="mb-8 text-lg font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
+<div className='border border-teal-700 mb-8 mt-8 rounded-lg bg-teal-500'
+>   <p className="mb-8 text-lg font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
 Creamos apps y páginas web que te ayudarán a:</p>
 
         <ul className='text-gray-50 text-2xl'>
@@ -54,7 +54,8 @@ Creamos apps y páginas web que te ayudarán a:</p>
 
         <p className="mb-8 text-lg font-normal font-manrope text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
          Te ayudaremos a crear una solución digital personalizada que se adapte a las necesidades de tu negocio.
-        </p>
+        </p></div>
+     
 
         <div className="flex flex-col bg-teal-400 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
           <a href="#Contacto" className="inline-flex justify-center text-2xl font-manrope items-center py-3 px-5  font-medium text-white 

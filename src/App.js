@@ -2,7 +2,6 @@ import './App.css';
 
 import React from "react";
 
-import NavigationBar from "./Components/NavigationBar"
 import Jumbotron from './Components/Jumbotron';
 // import HighStrategy from "./Components/HighStrategy"
 import Paraquien from './Components/Paraquien';
@@ -21,7 +20,6 @@ function App() {
       backgroundImage: `url(${imgUrl})`,
     }} > 
 {/* <Contacto /> */}
-<NavigationBar /> 
     <Jumbotron />
 {/* <HighStrategy  /> */}
 <Paraquien  />

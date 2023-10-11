@@ -8,7 +8,7 @@ function NavigationBar() {
   };
 
   return (
-    <nav className="bg-teal-100 border-teal-500 dark:bg-teal-500">
+    <nav className=" border-teal-500">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#Contacto" className="flex items-center">
           {/* <img rel="icon" type="image/png" src={logo} className="h-48" alt="logo"/> */}
@@ -42,12 +42,12 @@ function NavigationBar() {
           } w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-teal-100 rounded-lg bg-teal-100 md:flex-row md:space-x-8 md:mt-0 md:border-0  bg-teal-800 md:dark:bg-teal-900 dark:border-teal-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-teal-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  bg-teal-800 md:dark:bg-teal-900 dark:border-teal-700">
             
             <li className="bg-teal-500 rounded p-2">
               <a
                 href="#metodo"
-                className="block py-2 pl-3 pr-4 text-gray-50  rounded hover:text-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-gray-50  rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Ventajas
               </a>
@@ -55,7 +55,7 @@ function NavigationBar() {
             <li className="bg-teal-500 rounded p-2">
               <a
                 href="#servicio"
-                className="block py-2 pl-3 pr-4 text-gray-50 rounded hover:text-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-gray-50 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Servicios
               </a>
@@ -63,7 +63,7 @@ function NavigationBar() {
             <li className="bg-teal-500 rounded p-2">
               <a
                 href="#exito"
-                className="block py-2 pl-3 pr-4 text-gray-50 rounded hover:text-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-gray-50 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Otros clientes
               </a>
@@ -71,7 +71,7 @@ function NavigationBar() {
             <li className="bg-teal-500 rounded p-2">
               <a
                 href="#contacto"
-                className="block py-2 pl-3 pr-4 text-gray-50 rounded hover:text-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-gray-50 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-5000 dark:hover:bg-teal-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Contactame
               </a>
