@@ -54,7 +54,6 @@ Queres estar al tanto de las ofertas?   </h2>
 
 
     <div className="min-h-screen flex flex-col border bg-teal-100  justify-center items-center m-8 mb-5 rounded ">
-      <h1 className="text-gray-100 text-2xl m-4">Formulario de Registro</h1>
       <form className="bg-white p-4 rounded-lg shadow-md" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <label className="block text-gray-700">Email:</label>
