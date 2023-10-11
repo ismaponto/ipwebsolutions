@@ -9,13 +9,13 @@ function Footer() {
           <span className="text-sm text-gray-500 pr-2 sm:text-center dark:text-gray-400">
             © 2023 <a href="#Contacto" className="hover:underline">developed by </a> IP Web Solutions.
           </span>
-          <ul className="flex flex-row flex-wrap items-justify-center font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <ul className="flex flex-row flex-wrap items-justify-center font-medium text-gray-500 m-4 dark:text-gray-400 sm:mt-0">
             <li className=" flex pr-2">
               <a href="https://www.instagram.com/ismaponto/" className="hover:underline">
                 <img src={instagramico} alt="Instagram" className="w-8 hover:bg-teal-500" />
               </a>
             </li>
-            <li className="flex">
+            <li className="flex ml-4">
               <a href="https://www.linkedin.com/in/ismael-pontoriero-39122026/" className="mr-4 hover:underline md:mr-6">
                 <img src={linkedinico} alt="LinkedIn" className="w-8 hover:bg-teal-500" />
               </a>

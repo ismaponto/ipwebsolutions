@@ -1,5 +1,5 @@
 import React from "react";
-import compraweb from "./Paraquien/compraweb.svg"
+import emailimg from "./listaEmail/email.svg"
 import { useForm, Controller } from 'react-hook-form';
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -32,16 +32,16 @@ function ListaEmail() {
     recaptchaRef.current.reset();
   };
   
-  return ( <div className=" flex flex-col w-full items-center  md:flex-col">
+  return ( <div className="flex flex-col w-full items-center mb-4 md:flex-col">
  
   <h2 className="mb-2 flex flex-col center bg-teal-100 justify-center w-full text-3xl  text-teal-400 text-bold dark:text-white h-36 ">
 Queres estar al tanto de las ofertas?   </h2>
    
-<div className="flex flex-raw bg-repeat	justify-center"> 
+<div className="flex flex-row bg-repeat	justify-center lg:flex-wrap"> 
 
-<div className="flex flex-col flex-wrap items-center justify-center md:flex-col p-9 w-full">
+<div className="flex flex-col flex-wrap items-center justify-center m-8 md:flex-col p-9 w-full">
       <div className="flex center">
-        <img className="max-w-xs mb-8" src={compraweb} alt="personas" />
+        <img className="max-w-xs mb-8" src={emailimg} alt="personas" />
       </div>
     
       <div className="flex flex-col max-w-lg flex-0 center text-xl text-gray-500 justify-center">
@@ -53,8 +53,8 @@ Queres estar al tanto de las ofertas?   </h2>
 
 
 
-    <div className="  min-h-screen flex flex-col justify-center items-center mb-5 rounded h-72 ">
-      <h1 className="text-teal-600 text-2xl mb-4">Formulario de Registro</h1>
+    <div className="min-h-screen flex flex-col border bg-teal-100  justify-center items-center m-8 mb-5 rounded ">
+      <h1 className="text-gray-100 text-2xl m-4">Formulario de Registro</h1>
       <form className="bg-white p-4 rounded-lg shadow-md" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <label className="block text-gray-700">Email:</label>
