@@ -1,16 +1,11 @@
 import './App.css';
-
 import React from "react";
-
 import Jumbotron from './Components/Jumbotron';
-// import HighStrategy from "./Components/HighStrategy"
 import Paraquien from './Components/Paraquien';
-
-import CasosdeExito from "./Components/CasosdeExito"
+// import CasosdeExito from "./Components/CasosdeExito"
 import Stats from './Components/Stats';
 // import Contacto from "./Components/Contacto"
 import Footer from "./Components/Footer"
-// import SoyMatias from './Components/soymatias';
 import ListaEmail from './Components/ListaEmail';
 import imgUrl from "./Components/background/leaves.webp"
 
@@ -21,11 +16,9 @@ function App() {
     }} > 
 {/* <Contacto /> */}
     <Jumbotron />
-{/* <HighStrategy  /> */}
 <Paraquien  />
-<CasosdeExito />
+{/* <CasosdeExito /> */}
 <ListaEmail />
-{/* <SoyMatias /> */}
 <Stats />
 
 
