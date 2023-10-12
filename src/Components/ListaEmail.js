@@ -42,9 +42,8 @@ Queres estar al tanto de las ofertas?   </h2>
 
 <div className="flex flex-col flex-wrap items-center justify-center m-8 md:flex-col p-9 w-full">
       <div className="flex center">
-        <img className="max-w-xs mb-8" src={emailimg} alt="personas" />
+        <img className="max-w-sm mb-8" src={emailimg} alt="personas" />
       </div>
-    
       <div className="flex flex-col max-w-lg flex-0 center text-xl text-green-300 justify-center">
          <p>Deja tu contacto, y vas a recibir un email para confirmar tu inscripcion.</p>
          <p>No recibiras mas de un email por quincena, y solo de lunes a viernes!</p>

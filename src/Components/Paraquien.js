@@ -12,7 +12,7 @@ function Paraquien() {
   </h2>
    
 <div className="flex flex-row flex-wrap "> 
-<div className="flex flex-col flex-wrap items-center md:flex-col justify-between p-9">
+<div className="flex flex-col flex-wrap items-center md:flex-col justify-between max-w-sm p-9">
       <div className="flex center p-3">
         <img className="max-w-xs" src={compraweb} alt="personas" />
       </div>
@@ -23,12 +23,12 @@ function Paraquien() {
       </div>
     </div>
 
-    <div className="flex flex-col flex-wrap items-center md:flex-col justify-between p-9">
+    <div className="flex flex-col flex-wrap items-center md:flex-col justify-between m-4">
     <div className="flex center p-3">
         <img className="max-w-xs" src={crecer} alt="personas" />
       </div>
     
-      <div className="flex flex-col max-w-lg flex-0 center text-xl text-green-300 justify-center">
+      <div className="flex flex-col max-w-lg flex-0 center text-xl m-4 max-w-sm text-green-300 justify-center">
          <p className=''>Las apps móviles pueden ayudarte a:</p>
          <ul className='list-image-[url(checkmark.png)]'><li><p>Llegar a nuevos clientes</p></li>
          <li><p>Promocionar tus productos o servicios</p></li>
@@ -39,7 +39,7 @@ function Paraquien() {
     </div>
 
 
-    <div className="flex flex-col flex-wrap items-center md:flex-col justify-between p-9">
+    <div className="flex flex-col flex-wrap items-center max-w-sm md:flex-col justify-between m-4">
     <div className="flex center p-3">
         <img className="max-w-xs" src={money} alt="personas" />
       </div>
