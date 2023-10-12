@@ -7,7 +7,7 @@ import money from "./Paraquien/money.svg"
 function Paraquien() {
   return ( <div className="flex flex-wrap w-full  justify-center md:flex-col mb-8">
  
-  <h2 className="mb-2 flex flex-col center bg-teal-100 justify-center w-full text-3xl  text-teal-400 text-bold dark:text-white h-36 ">
+  <h2 className="mb-2 flex flex-col center bg-teal-500 justify-center w-full text-3xl  text-white text-bold dark:text-white h-36 ">
    Tu app móvil es tu mejor herramienta para crecer
   </h2>
    

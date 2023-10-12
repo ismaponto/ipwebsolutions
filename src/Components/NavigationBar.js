@@ -16,7 +16,7 @@ function NavigationBar() {
         </a>
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-emerald-400 rounded-lg md:hidden hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200 dark:text-emerald-400 dark:hover:bg-teal-700 dark:focus:ring-teal-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-emerald-400 rounded-lg md:hidden hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-200 dark:text-emerald-400 dark:hover:bg-teal-700 dark:focus:ring-teal-600"
           onClick={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>

@@ -1,7 +1,7 @@
 import React from "react";
 import emailimg from "./listaEmail/email.svg"
 import { useForm, Controller } from 'react-hook-form';
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 const countries = [
   'Seleccionar país',
@@ -35,14 +35,14 @@ function ListaEmail() {
   
   return ( <div className="flex flex-col w-full items-center mb-4 md:flex-col">
  
-  <h2 className="mb-2 flex flex-col center bg-teal-100 justify-center w-full text-3xl  text-teal-400 text-bold dark:text-white h-36 ">
+  <h2 className="mb-2 flex flex-col center bg-teal-500 justify-center w-full text-3xl text-white text-bold  h-36 ">
 Queres estar al tanto de las ofertas?   </h2>
    
-<div className="flex flex-row bg-repeat	justify-center lg:flex-wrap"> 
+<div className="flex flex-row flex-wrap max-w-2xl w-full bg-repeat	justify-between lg:flex-wrap"> 
 
-<div className="flex flex-col flex-wrap items-center justify-center m-8 md:flex-col p-9 w-full">
+<div className="flex flex-col max-w-sm items-center justify-around p-9 md:flex-colm- w-full p-8">
       <div className="flex center">
-        <img className="max-w-sm mb-8" src={emailimg} alt="personas" />
+        <img className="max-w-sm -8" src={emailimg} alt="personas" />
       </div>
       <div className="flex flex-col max-w-lg flex-0 center text-xl text-green-300 justify-center">
          <p>Deja tu contacto, y vas a recibir un email para confirmar tu inscripcion.</p>
@@ -53,7 +53,7 @@ Queres estar al tanto de las ofertas?   </h2>
 
 
 
-    <div className="min-h-screen flex flex-col border bg-teal-100  justify-center items-center m-8 mb-5 rounded ">
+    <div className=" flex flex-col max-w-sm inline-flex w-sm m-8 justify-center items-center m-8 mb-5 rounded ">
       <form className="bg-white p-4 rounded-lg shadow-md" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <label className="block text-gray-700">Email:</label>

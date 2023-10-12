@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import NavigationBar from './NavigationBar';
+import card from "./jumbotron/card-svgrepo-com.svg"
+import microphone from "./jumbotron/microphone1-broadcasting-svgrepo-com.svg"
+import clock from "./jumbotron/clock-svgrepo-com.svg"
+import setting from "./jumbotron/setting-setting-svgrepo-com.svg"
 
 const Jumbotron = () => {
   const [gradient, setGradient] = useState('linear-gradient(to right, #91D5D3, rgba(0, 128, 128, 0.8))'); // Color sepia en lugar de blanco
@@ -39,17 +43,15 @@ const Jumbotron = () => {
         <h1 className="mb-4 text-4xl font-bold tracking-tight p-4 leading-none text-gray-50	 md:text-5xl lg:text-6xl">IP  Web Solutions</h1>
   
         <p className="mb-8 text-2xl font-normal text-blue-300 lg:text-2xl sm:px-16 lg:px-48">
-          Aumenta tu visibilidad, tus ventas y tus procesos productivos
-        </p>
-<div className='mb-8 mt-8 rounded-lg '
->   <p className="mb-8 text-lg font-normal text-blue-300  p-4 lg:text-2xl sm:px-16 lg:px-48">
+Automatiza tus procesos y crece tus negociost        </p>
+<div className='mb-8 mt-8 rounded-lg flex flex-col justify-center justify-items-center'>   <p className="mb-8 text-lg font-normal text-blue-300  p-4 lg:text-2xl sm:px-16 lg:px-48">
 Creamos apps y páginas web que te ayudarán a:</p>
 
-        <ul className='text-gray-50 text-2xl'>
-          <li className="mb-4 ">Aumentar tu visibilidad online</li>
-          <li className="mb-4 ">Generar más leads y ventas</li>
-          <li className="mb-4 ">Automatizar tus tareas</li>
-          <li className="mb-4 ">Mejorar tu eficiencia</li>
+        <ul className='text-gray-50 flex flex-col justify-center items-justify-center text-2xl'>
+          <li className="mb-4 flex flex-row justify-center"><img src={microphone} alt="visibility" className="w-8 " /> <p>Aumentar tu visibilidad online</p></li>
+          <li className="mb-4 flex flex-row justify-center"><img src={card} alt="visibility" className="w-8 " /> <p>Generar más leads y ventas</p></li>
+          <li className="mb-4 flex flex-row justify-center"><img src={setting} alt="visibility" className="w-8 " /> <p>Automatizar tus tareas</p></li>
+          <li className="mb-4 flex flex-row justify-center"><img src={clock} alt="visibility" className="w-8 " /> <p>Mejorar tu eficiencia</p></li>
         </ul>
 
         <p className="mb-8 text-lg font-normal text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
@@ -57,7 +59,7 @@ Creamos apps y páginas web que te ayudarán a:</p>
         </p></div>
      
 
-        <div className="flex flex-col bg-teal-400 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
+        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
           <a href="#Contacto" className="inline-flex justify-center text-2xl items-center py-3 px-5  font-medium text-gray-200 
           rounded-lg border-2 border-teal-700 bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-800 m-8">
             Solicita una cotización gratis
