@@ -51,7 +51,7 @@ Creamos apps y páginas web que te ayudarán a:</p>
           <li className="mb-4 flex flex-row justify-center"><img src={microphone} alt="visibility" className="w-8 " /> <p>Aumentar tu visibilidad online</p></li>
           <li className="mb-4 flex flex-row justify-center"><img src={card} alt="visibility" className="w-8 " /> <p>Generar más leads y ventas</p></li>
           <li className="mb-4 flex flex-row justify-center"><img src={setting} alt="visibility" className="w-8 " /> <p>Automatizar tareas repetitivas</p></li>
-          <li className="mb-4 flex flex-row justify-center"><img src={clock} alt="visibility" className="w-8 " /> <p>Ahorrar tiempo y dinero</p></li>
+          <li className="mb-4 flex flex-row justify-center"><img src={clock} alt="visibility" className="w-8 " /> <p>Ahorrar tiempo y dineros</p></li>
         </ul>
 
         <p className="mb-8 text-lg font-normal text-gray-50 lg:text-2xl sm:px-16 lg:px-48">

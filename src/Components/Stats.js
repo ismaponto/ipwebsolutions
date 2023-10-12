@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 function Stats() {
   const [isVisible, setIsVisible] = useState(false);
   const [countStarted, setCountStarted] = useState(false);
-  const [countEnd] = useState([2, 25000, 32]);
+  const [countEnd] = useState([7, 25000, 32]);
   const [counting, setCounting] = useState([0, 0, 0]);
 
   const { ref, inView } = useInView({
@@ -55,7 +55,7 @@ function Stats() {
               </div>
               <dd className="font-light text-blue-50 dark:text-blue-50">
                 { index === 0
-                  ? "Clientes Satisfechos"
+                  ? "personas siguen nuestros e-mails quincenales"
                   : index === 1
                   ? "Euros por año mas que no se van a la competencia"
                   : "% mas de ventas registrado"}
