@@ -8,7 +8,9 @@ const submitToGoogleSheets = async(data) => {
     const sheetName = 'ipWrbSolution';
     const apiKey = 'AIzaSyDopIp59kIBLUhVB4M25LHvkMzZNeQQT6Q'
 
-    const response = await axios.post(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetName}:append?valueInputOption=RAW&includeValuesInResponse=true`, {
+
+
+    const response = await axios.post(`https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}:append`, {
         values: [data],
         headers: {
             'Authorization': `Bearer ${apiKey}`,
