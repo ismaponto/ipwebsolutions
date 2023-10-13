@@ -2,6 +2,7 @@ import React from 'react';
 import emailimg from './listaEmail/email.svg';
 import { useForm, Controller } from 'react-hook-form';
 // import ReCAPTCHA from "react-google-recaptcha";
+import submitToGoogleSheets from '../controler/submitToGoogleSheets';
 
 const countries = [
 	'Seleccionar país',
@@ -19,17 +20,20 @@ const countries = [
 
 function ListaEmail() {
 	const { register, handleSubmit, formState: { errors }, control, reset } = useForm();
-	const recaptchaRef = React.createRef();
+	// const recaptchaRef = React.createRef();
 
-	const onSubmit = (data) => {
-		// Aquí puedes enviar los datos a tu servidor o hacer lo que necesites con ellos.
-		console.log(data);
-
+	const onSubmit = async (data) => {
+			await submitToGoogleSheets(data);
+		  
+			// Aquí puedes enviar los datos a tu servidor o hacer lo que necesites con ellos.
+			console.log(data);
+		  
+			// Resetea el formulario después de enviar
+			reset();
+		 
 		// Resetea el formulario y el CAPTCHA después de enviar
-		reset();
-		recaptchaRef.current.reset();
-	};
-
+		// recaptchaRef.current.reset();
+		}
 	return (
 		<div className="flex flex-col w-full items-center mb-4 md:flex-col">
 			<h2 className="mb-2 flex flex-col center bg-teal-500 justify-center w-full text-3xl text-white text-bold  h-36 ">
@@ -121,6 +125,6 @@ function ListaEmail() {
 			</div>
 		</div>
 	);
-}
 
+	}
 export default ListaEmail;
