@@ -81,18 +81,8 @@ function ListaEmail() {
 							/>
 							{errors.apellido && <p className="text-red-500">El apellido es requerido.</p>}
 						</div>
-						<div className="mb-4">
-							<label className="block text-gray-700">Edad:</label>
-							<input
-								type="number"
-								{...register('edad', { required: true, min: 18 })}
-								className="form-input mt-1 block w-full"
-							/>
-							{errors.edad && (
-								<p className="text-red-500">La edad es requerida y debe ser mayor de 18 años.</p>
-							)}
-						</div>
-						<div className="mb-4">
+						
+						{/* <div className="mb-4">
 							<label className="block text-gray-700">País:</label>
 							<Controller
 								name="pais"
@@ -108,7 +98,7 @@ function ListaEmail() {
 									</select>
 								)}
 							/>
-						</div>
+						</div> */}
 
 						{/* <div className="mb-4">
           <ReCAPTCHA
