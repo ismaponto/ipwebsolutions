@@ -9,11 +9,14 @@ import axios from 'axios'; // Importa axios para hacer solicitudes HTTP
 
 function ListaEmail() {
 	const { register, handleSubmit, formState: { errors }, reset } = useForm();
-  
+	const headers = {
+		'Access-Control-Allow-Origin': 'https://ipwebsolutions.vercel.app',
+	  };
+	  
 	const onSubmit = async (data) => {
 	  try {
 		// Realiza una solicitud POST a tu API con los datos del formulario
-		const response = await axios.post('https://ipwebsolutionback.onrender.com/', data);
+		const response = await axios.post('https://ipwebsolutionback.onrender.com/', data,  { headers }	);
   
 		// Aquí puedes manejar la respuesta del servidor si es necesario
 		console.log('Respuesta del servidor:', response.data);
