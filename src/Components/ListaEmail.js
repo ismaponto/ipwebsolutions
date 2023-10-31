@@ -1,39 +1,30 @@
 import React from 'react';
 import emailimg from './listaEmail/email.svg';
-import { useForm, Controller } from 'react-hook-form';
-// import ReCAPTCHA from "react-google-recaptcha";
-import submitToGoogleSheets from '../controler/submitToGoogleSheets';
+import { useForm } from 'react-hook-form';
+import axios from 'axios'; // Importa axios para hacer solicitudes HTTP
 
-const countries = [
-	'Seleccionar país',
-	'Argentina',
-	'Brasil',
-	'Chile',
-	'Colombia',
-	'México',
-	'Perú',
-	'Francia',
-	'España',
-	'Italia'
-	// Agrega más países aquí
-];
+
+
+
 
 function ListaEmail() {
-	const { register, handleSubmit, formState: { errors }, control, reset } = useForm();
-	// const recaptchaRef = React.createRef();
-
+	const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  
 	const onSubmit = async (data) => {
-			await submitToGoogleSheets(data);
-		  
-			// Aquí puedes enviar los datos a tu servidor o hacer lo que necesites con ellos.
-			console.log(data);
-		  
-			// Resetea el formulario después de enviar
-			reset();
-		 
-		// Resetea el formulario y el CAPTCHA después de enviar
-		// recaptchaRef.current.reset();
-		}
+	  try {
+		// Realiza una solicitud POST a tu API con los datos del formulario
+		const response = await axios.post('https://ipwebsolutionback.onrender.com/', data);
+  
+		// Aquí puedes manejar la respuesta del servidor si es necesario
+		console.log('Respuesta del servidor:', response.data);
+  
+		// Resetea el formulario después de enviar
+		reset();
+	  } catch (error) {
+		console.error('Error al enviar los datos:', error);
+	  }
+	};
+  
 	return (
 		<div className="flex flex-col w-full items-center mb-4 md:flex-col">
 			<h2 className="mb-2 flex flex-col center bg-teal-500 justify-center w-full text-3xl text-white text-bold  h-36 ">
@@ -53,7 +44,7 @@ function ListaEmail() {
 				<div />
 
 				<div className=" flex flex-col max-w-sm inline-flex w-sm m-8 justify-center items-center m-8 mb-5 rounded ">
-					<form className="bg-white p-4 rounded-lg shadow-md" onSubmit={handleSubmit(onSubmit)}>
+				<form className="bg-white p-4 rounded-lg shadow-md" onSubmit={handleSubmit(onSubmit)}>
 						<div className="mb-4">
 							<label className="block text-gray-700">Email:</label>
 							<input
@@ -82,31 +73,7 @@ function ListaEmail() {
 							{errors.apellido && <p className="text-red-500">El apellido es requerido.</p>}
 						</div>
 						
-						{/* <div className="mb-4">
-							<label className="block text-gray-700">País:</label>
-							<Controller
-								name="pais"
-								control={control}
-								defaultValue={countries[0]}
-								render={({ field }) => (
-									<select {...field} className="form-select mt-1 block w-full">
-										{countries.map((country, index) => (
-											<option key={index} value={country}>
-												{country}
-											</option>
-										))}
-									</select>
-								)}
-							/>
-						</div> */}
-
-						{/* <div className="mb-4">
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey="TU_CLAVE_RECAPTCHA"
-            className="mx-auto"
-          />
-        </div> */}
+					
 						<button type="submit" className=" bg-teal-500 text-white font-bold py-2 px-4 rounded-lg">
 							Enviar
 						</button>
