@@ -16,7 +16,7 @@ function ListaEmail() {
 	const onSubmit = async (data) => {
 	  try {
 		// Realiza una solicitud POST a tu API con los datos del formulario
-		const response = await axios.post('https://ipwebsolutionback.onrender.com/', data,  { headers }	);
+		const response = await axios.post('https://ipwebsolutionback.onrender.com/contacto', data,  { headers }	);
   
 		// Aquí puedes manejar la respuesta del servidor si es necesario
 		console.log('Respuesta del servidor:', response.data);
