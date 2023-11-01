@@ -7,13 +7,13 @@ function ListaEmail() {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-    const headers = {
-        'Access-Control-Allow-Origin': 'https://ipwebsolutions.vercel.app',
-    };
+    // const headers = {
+    //     'Access-Control-Allow-Origin': 'https://ipwebsolutions.vercel.app',
+    // };
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('https://ipwebsolutionback.onrender.com/subscribe', data);
+            const response = await axios.post('https://ipwebsolutionback.onrender.com/subscribe', data );
             console.log('Respuesta del servidor:', response.data);
             setSuccessMessage('¡Tu suscripción ha sido confirmada!');
             reset();
@@ -29,14 +29,15 @@ function ListaEmail() {
                 Queres estar al tanto de las ofertas?
             </h2>
 
-            <div className="flex flex-row flex-wrap max-w-2xl w-full bg-repeat justify-between lg:flex-wrap">
-                <div className="flex flex-col max-w-sm items-center justify-around p-9 md:flex-colm- w-full p-8">
-                    <div className="flex center">
-                        <img className="max-w-sm -8" src={emailimg} alt="personas" />
-                    </div>
-                    <div className="flex flex-col max-w-lg flex-0 center text-xl text-green-300 justify-center">
-                        <p>Deja tu contacto, y vas a recibir un email para confirmar tu inscripcion.</p>
-                        <p>No recibiras mas de un email por quincena, y solo de lunes a viernes!</p>
+            <div className="flex flex-col w-full sm:flex-row items-center justify-center bg-repeat flex-wrap">
+                <div className="flex flex-col max-w-sm items-center justify-around p-9 w-full p-8">
+                        <img className="max-w-sm  p-8" src={emailimg} alt="personas" />
+                    <div className="flex flex-col max-w-lg flex-0 center text-xl text-green-300 p-8">
+                       <p>¡Únete a nuestra comunidad y recibe un descuento exclusivo en tu próxima compra!</p>
+                        <p>Solo tienes que dejarnos tu email y te enviaremos un mensaje para confirmar tu suscripción.</p>
+                       <p>No te preocupes, solo te enviaremos un email por quincena, de lunes a viernes.</p>
+
+
                     </div>
                 </div>
                 <div />
