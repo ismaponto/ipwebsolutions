@@ -13,7 +13,7 @@ function ListaEmail() {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('https://ipwebsolutionback.onrender.com/subscribe', data, { headers });
+            const response = await axios.post('https://ipwebsolutionback.onrender.com/subscribe', data);
             console.log('Respuesta del servidor:', response.data);
             setSuccessMessage('¡Tu suscripción ha sido confirmada!');
             reset();
