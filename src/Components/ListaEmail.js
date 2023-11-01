@@ -19,7 +19,7 @@ function ListaEmail() {
             reset();
         } catch (error) {
             console.error('Error al enviar los datos:', error);
-            setErrorMessage('Error al enviar los datos. Por favor, inténtalo de nuevo.');
+            setErrorMessage('Error al enviar los datos. Por favor, inténtalo de nuevo.'+ error.response.data.error);
         }
     };
 
