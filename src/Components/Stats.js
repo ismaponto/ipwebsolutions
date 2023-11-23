@@ -49,7 +49,7 @@ function Stats() {
 				<dl className="grid max-w-screen-md gap-8 mx-auto text-blue-50 sm:grid-cols-3 dark:text-blue-50">
 					{countEnd.map((endValue, index) => (
 						<div className="flex flex-col items-center justify-center" key={index}>
-							<div ref={ref} className="mb-2 text-3xl md:text-4xl font-extrabold">
+							<div ref={ref} className="mb-2 text-3xl md:text-xl font-extrabold">
 								{isVisible ? (
 									<CountUp end={endValue} duration={5} start={0} separator="," useEasing={true} />
 								) : (

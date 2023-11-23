@@ -10,7 +10,7 @@ import ListaEmail from '../Components/ListaEmail';
 
 function LandingPage() {
 	return (
-		<div className="App font-manrope overflow-hidden">
+		<div className="App overflow-hidden">
 			<Jumbotron />
 			<Paraquien /> {/* <CasosdeExito /> */} <ListaEmail />
 			<Stats /> {/* <Contacto /> */}

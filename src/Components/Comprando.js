@@ -23,7 +23,7 @@ const Comprando = () => {
           </ul>
       </div>
       <div className="mb-8 mt-8 bg-white bg-opacity-50 hadow w-full rounded-lg flex flex-col justify-center items-center">
-        <h3 className="mb-8 text-lg font-normal text-blue-300 p-4 lg:text-2xl sm:px-16 lg:px-48">
+        <h3 className="mb-8 text-lg font-normal text-blue-300 p-4 lg:text-xl sm:px-16 lg:px-48">
               Este es el plan que tenemos:
             </h3>
           <ul className="text-gray-50 flex flex-col justify-center items-center text-xl">
