@@ -4,7 +4,7 @@ import linkedinico from './ico/linkedin.png';
 
 function Footer() {
 	return (
-		<footer className="flex align-items-center rounded-lg shadow m-2 dark:bg-gray-800 p-8 ">
+		<footer className="flex w-full bg-teal-500 align-items-center rounded-lg shadow m-2 dark:bg-gray-800 p-8 ">
 			<div className="mx-auto max-w-screen-xl p-4 sm:flex sm:items-center sm:justify-between">
 				<span className="text-sm text-emerald-400 pr-2 sm:text-center dark:text-emerald-400">
 					© 2023{' '}

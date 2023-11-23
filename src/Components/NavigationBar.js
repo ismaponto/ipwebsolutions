@@ -9,7 +9,7 @@ function NavigationBar() {
 
 	return (
 		<nav className="border-teal-500">
-			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<div className=" flex flex-wrap items-center bg-teal-500  justify-between mx-auto p-4">
 				<a href="#Contacto" className="flex items-center">
 					{/* <img rel="icon" type="image/png" src={logo} className="h-48" alt="logo"/> */}
 					<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-200" />
