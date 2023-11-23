@@ -39,7 +39,7 @@ const Jumbotron = () => {
       }}
     >
       <NavigationBar />
-      <div className="px-4 text-blue-300 mx-auto max-w-screen-xl text-center  lg:py-8">
+      <div className="px-4 text-blue-300 mx-auto max-w-screen-xl text-center mb-2 lg:py-8">
         <h1 className="mb-2 text-4xl font-bold tracking-tight p-4 leading-none text-gray-50 md:text-5xl lg:text-6xl">
           IP Web Solutions
         </h1>
@@ -65,7 +65,7 @@ const Jumbotron = () => {
 							<img src={clock} alt="visibility" className="w-8 " /> <p>Ahorrar tiempo y dineros</p>
 						</li>
 					</ul>
-					<p className="mb-8 text-lg font-normal text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
+					<p className="mb-2 text-lg font-normal text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
 						Te ayudo a crear una solución digital personalizada que se adapte a las necesidades de tu
 						negocio
 					</p>
