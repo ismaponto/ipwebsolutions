@@ -40,13 +40,13 @@ const Jumbotron = () => {
     >
       <NavigationBar />
       <div className="px-4 text-blue-300 mx-auto max-w-screen-xl text-center  lg:py-8">
-        <h1 className="mb-4 text-4xl font-bold tracking-tight p-4 leading-none text-gray-50 md:text-5xl lg:text-6xl">
+        <h1 className="mb-2 text-4xl font-bold tracking-tight p-4 leading-none text-gray-50 md:text-5xl lg:text-6xl">
           IP Web Solutions
         </h1>
 
-				<div className="mb-8 mt-8 rounded-lg flex flex-col justify-center justify-items-center">
+				<div className="mb-2 mt-8 rounded-lg flex flex-col justify-center justify-items-center">
 					{' '}
-					<p className="mb-8 text-lg font-normal text-blue-300  p-4 lg:text-2xl sm:px-16 lg:px-48">
+					<p className="mb-2 text-lg font-normal text-blue-300  p-4 lg:text-2xl sm:px-16 lg:px-48">
 						Creamos apps y páginas web que te ayudarán a:
 					</p>
 					<ul className="text-gray-50 flex flex-col justify-center items-justify-center text-2xl">
