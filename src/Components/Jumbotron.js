@@ -40,7 +40,7 @@ const Jumbotron = () => {
     >
       <NavigationBar />
       <div className="px-4 text-blue-300 mx-auto max-w-screen-xl text-center mb-2 lg:py-8">
-        <h1 className="mb-2 text-4xl font-bold tracking-tight p-4 leading-none text-gray-50 md:text-5xl lg:text-6xl">
+        <h1 className="mb-2 text-4xl font-bold tracking-tight p-2 leading-none text-gray-50 md:text-5xl lg:text-6xl">
           IP Web Solutions
         </h1>
 
