@@ -38,19 +38,24 @@
 */
 
 html {
+    font-family: 'Kanit', sans-serif;
     line-height: 1.5;
     /* 1 */
     /* 2 */
     /* 3 */
     tab-size: 4;
     /* 3 */
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     /* 4 */
     -webkit-font-feature-settings: normal;
     font-feature-settings: normal;
     /* 5 */
     font-variation-settings: normal;
     /* 6 */
+}
+
+p {
+    font-family: 'Kanit', sans-serif;
 }
 
 
@@ -60,6 +65,7 @@ html {
 */
 
 body {
+    font-family: 'Kanit', sans-serif;
     margin: 0;
     /* 1 */
     line-height: inherit;
@@ -103,6 +109,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Kanit', sans-serif;
     font-size: inherit;
     font-weight: inherit;
 }
@@ -113,6 +120,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 */
 
 a {
+    font-family: 'Kanit', sans-serif;
     color: inherit;
     text-decoration: inherit;
 }
