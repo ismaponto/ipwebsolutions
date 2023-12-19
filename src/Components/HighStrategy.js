@@ -9,7 +9,7 @@ const HighStrategy = () => {
           "High Stratégie Method: Transforma tus sueños en realidad"
         </span>
       </h1>
-      <p className="text-lg font-normal text-emerald-400 lg:text-xl dark:text-emerald-400">
+      <p className="text-lg font-normal  lg:text-xl" >
         Descubre cómo nuestra estrategia alta puede llevar tu negocio al siguiente nivel
       </p>
       <img className="h-auto max-w-lg-full mx-auto" src={imgHigh} alt="High Stratégie Method" />

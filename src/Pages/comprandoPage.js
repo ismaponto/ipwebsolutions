@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../App.css';
 import Comprando from '../Components/Comprando';
 import Footer from '../Components/Footer';
 import imgUrl from '../Components/background/leaves.webp';

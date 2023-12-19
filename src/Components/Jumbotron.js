@@ -1,105 +1,84 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Importa el componente Link
+import React from 'react';
+import { Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
 import card from './jumbotron/card-svgrepo-com.svg';
 import microphone from './jumbotron/microphone1-broadcasting-svgrepo-com.svg';
 import clock from './jumbotron/clock-svgrepo-com.svg';
 import setting from './jumbotron/setting-setting-svgrepo-com.svg';
-import imgUrl from '../Components/background/leaves.webp';
 
 const Jumbotron = () => {
-	const [ gradient, setGradient ] = useState('linear-gradient(to right, #91D5D3, rgba(0, 128, 128, 0.8))');
-
-	useEffect(() => {
-		const handleMouseMove = (e) => {
-			const color1 = `#91D5D3 `;
-			const color2 = `rgba(0, 128, 128, 0.8)`;
-			const color = `#91D5D3`;
-			const color2trans = `rgba(0, 128, 128, 0.0)`;
-
-			setGradient(`linear-gradient(to right, ${color1}, ${color2})`);
-			setGradient(`linear-gradient(to bottom, ${color}, ${color2trans})`);
-		};
-
-		window.addEventListener('mousemove', handleMouseMove);
-
-		return () => {
-			window.removeEventListener('mousemove', handleMouseMove);
-		};
-	}, []);
-
 	return (
-		<section
-			className="bg-center bg-repeat font-sans	 bg-blend-multiply"
-			style={{
-				backgroundImage: `url(${imgUrl})`
-			}}
-		>
-			<div
-				className={`bg-center bg-no-repeat bg-cover bg-blend-multiply `}
-				style={{
-					background: gradient
-				}}
-			>
-				<NavigationBar />
-				<div className="px-4 text-blue-300 mx-auto max-w-screen-xl text-center mb-2 lg:py-8">
-					<h1 className="mb-2 text-2xl font-bold tracking-tight p-1 leading-none text-gray-50 md:text-3xl lg:text-4xl">
-						IP Web Solutions
+		<section className=" flex-col w-full ">
+			<NavigationBar />
+			<div className="flex flex-col items-center w-full  mx-auto max-w-screen-xl mb-2 ">
+				<div class="flex flex-row">
+					<h1 class="flex max-w-sm mb-2 justify-around text-2xl text-start tracking-tight p-8 text-5xl">
+						CatalystWeb <br />Solutions
 					</h1>
 
-					<div className="mb-2 mt-8 rounded-lg flex flex-col justify-center items-center justify-items-center">
-						{' '}
-						<p className="mb-2 text-lg font-normal text-blue-300  p-4 lg:text-xl sm:px-16 lg:px-48">
-							Creamos apps y páginas web que te ayudarán a:
+					<div class="rounded-lg  flex-1">
+						<p class="mb-2 text- max-w-lg font-normal p-8">
+							Hola, me llamo Ismael Pontoriero y soy el fundador de CatalystWeb.
+							<br />
+							 Mi enfoque es resolver problemas a
+							través de la informática y el diseño web. Nos especializamos en crear sitios web modernos y
+							atractivos con las últimas tecnologías para garantizar calidad y una experiencia óptima.
 						</p>
-						<ul className="text-gray-50 list-none flex flex-col items-start ">
-							<li className="mb-4 flex flex-row items-center space-x-2">
-								<img src={microphone} alt="visibility" className="w-8" />
-								<p>Aumentar tu visibilidad online</p>
-							</li>
-							<li className="mb-4 flex flex-row items-center space-x-2">
-								<img src={card} alt="visibility" className="w-8" />
-								<p>Generar más leads y ventas</p>
-							</li>
-							<li className="mb-4 flex flex-row items-center space-x-2">
-								<img src={setting} alt="visibility" className="w-8" />
-								<p>Automatizar tareas repetitivas</p>
-							</li>
-							<li className="mb-4 flex flex-row items-center space-x-2">
-								<img src={clock} alt="visibility" className="w-8" />
-								<p>Ahorrar tiempo y dinero</p>
-							</li>
-						</ul>
-						<p className="m-2 text-lg font-normal text-gray-50 lg:text-2xl sm:px-16 lg:px-48">
-							Te ayudo a crear una solución digital personalizada que se adapte a las necesidades de tu
-							negocio
-						</p>
+					</div>
+				</div>
+
+				<div className='flex flex-col self-center items-center   w-full'>
+					<div className="text-vanilla text-center list-none flex flex-wrap items-start">
+						<div>
+							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center  m-4">
+								<img src={microphone} alt="visibility" className="w-32" />
+								<p className=" w-full p-2 rounded ">Aumentar tu visibilidad online</p>
+							</div>
+							<div className="mb-4 flex max-w-xs flex-col  rounded-xl items-center  m-4">
+								<img src={card} alt="leads" className="w-32" />
+								<p className=" w-full p-2 rounded ">Generar más leads y ventas</p>
+							</div>
+						</div>
+						<div>
+							<div className="mb-4 flex max-w-xs flex-col  rounded-xl items-center  m-4">
+								<img src={setting} alt="automatizacion" className="w-32" />
+								<p className=" w-full p-2 rounded ">Automatizar tareas repetitivas</p>
+							</div>
+							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center m-4 ">
+								<img src={clock} alt="time" className="w-32" />
+								<p className=" w-full p-2 rounded ">Ahorrar tiempo y dinero</p>
+							</div>
+						</div>
 					</div>
 
-					<div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
-						{/* Utiliza Link para navegar hacia la página "Comprando" */}
-						<Link
-							to="/comprando"
-							className="inline-flex justify-center text-xl items-center py-3 px-5 font-medium text-gray-200 rounded-lg border-2 border-teal-700 bg-teal-500 hover:bg-teal-800 hover:text-2xl hover:ring-4 hover:ring-teal-300 dark:focus:ring-teal-800 m-8"
+					<p className="m-2 text-lg font-normal text-vanilla lg:text-2xl sm:px-16 lg:px-48">
+						Te ayudo a crear una solución digital personalizada que se adapte a las necesidades de tu
+						negocio
+					</p>
+				</div>
+
+				<div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
+					<Link
+						to="/comprando"
+						className="inline-flex justify-center text-xl items-center py-3 px-5 font-medium text-vanilla rounded-lg bg-matcha  hover:bg-pistache hover:ring-4 hover:ring-pistache dark:focus:ring-pistache m-8"
+					>
+						Quiero mi Página Web
+						<svg
+							className="w-3.5 h-3.5 ml-2"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 14 10"
 						>
-							Quiero mi Pagina Web
-							<svg
-								className="w-3.5 h-3.5 ml-2"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 14 10"
-							>
-								<path
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M1 5h12m0 0L9 1m4 4L9 9"
-								/>
-							</svg>
-						</Link>
-					</div>
+							<path
+								stroke="currentColor"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
+								d="M1 5h12m0 0L9 1m4 4L9 9"
+							/>
+						</svg>
+					</Link>
 				</div>
 			</div>
 		</section>

@@ -3,7 +3,7 @@ import React from 'react';
 const Comprando = () => {
   return (
     <section className="flex min-h-full max-w-7xl flex-col text-center items-center ">
-      <div className="bg-white bg-opacity-50 w-full shadow rounded-lg">
+      <div className="bg-white bg-opacity-50 w-full  rounded-lg">
         <h2 className="mb-4 text-2xl w-full tracking-tight p-4 bolded leading-none text-gray-50">
             Desbloquea el éxito para tu empresa con nuestro exclusivo servicio:
           </h2>
