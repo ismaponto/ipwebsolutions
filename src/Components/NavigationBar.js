@@ -36,7 +36,7 @@ function NavigationBar() {
           </svg>
         </button>
         <div className={`${isOpen ? 'block' : 'hidden'} md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex row-end flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+          <ul className="font-medium flex md: row-end flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li className="rounded p-2">
               <a
                 href="#metodo"

@@ -11,8 +11,8 @@ const Jumbotron = () => {
 		<section className=" flex-col w-full ">
 			<NavigationBar />
 			<div className="flex flex-col items-center w-full  mx-auto max-w-screen-xl mb-2 ">
-				<div class="flex flex-row">
-					<h1 class="flex max-w-sm mb-2 justify-around text-2xl text-start tracking-tight p-8 text-5xl">
+				<div class="flex flex-row flex-wrap">
+					<h1 class="flex max-w-sm mb-2 justify-around text-2xl text-start tracking-tight p-8 md:text-5xl text-4xl">
 						CatalystWeb <br />Solutions
 					</h1>
 
@@ -30,21 +30,21 @@ const Jumbotron = () => {
 				<div className='flex flex-col self-center items-center   w-full'>
 					<div className="text-vanilla text-center list-none flex flex-wrap items-start">
 						<div>
-							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center  m-4">
+							<div className="mb-4 flex shadow-md max-w-xs flex-col  rounded-xl items-center  m-4">
 								<img src={microphone} alt="visibility" className="w-32" />
 								<p className=" w-full p-2 rounded ">Aumentar tu visibilidad online</p>
 							</div>
-							<div className="mb-4 flex max-w-xs flex-col  rounded-xl items-center  m-4">
+							<div className="mb-4 flex shadow-md max-w-xs flex-col  rounded-xl items-center  m-4">
 								<img src={card} alt="leads" className="w-32" />
 								<p className=" w-full p-2 rounded ">Generar más leads y ventas</p>
 							</div>
 						</div>
 						<div>
-							<div className="mb-4 flex max-w-xs flex-col  rounded-xl items-center  m-4">
+							<div className="mb-4 flex shadow-md max-w-xs flex-col  rounded-xl items-center  m-4">
 								<img src={setting} alt="automatizacion" className="w-32" />
 								<p className=" w-full p-2 rounded ">Automatizar tareas repetitivas</p>
 							</div>
-							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center m-4 ">
+							<div className="mb-4 flex  shadow-md max-w-xs flex-col  rounded-xl items-center m-4 ">
 								<img src={clock} alt="time" className="w-32" />
 								<p className=" w-full p-2 rounded ">Ahorrar tiempo y dinero</p>
 							</div>

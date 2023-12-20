@@ -790,6 +790,10 @@ video {
     max-width: 20rem;
 }
 
+.max-w-xss {
+    max-width: 14rem;
+}
+
 .list-none {
     list-style-type: none;
 }
@@ -910,6 +914,11 @@ video {
 .bg-matcha {
     --tw-bg-opacity: 1;
     background-color: rgb(128 150 113 / var(--tw-bg-opacity));
+}
+
+.bg-matcha-200 {
+    --tw-bg-opacity: 1;
+    background-color: hsl(80, 30%, 50%);
 }
 
 .bg-vanilla {

@@ -44,8 +44,8 @@ function Stats() {
 	);
 
 	return (
-		<section className="bg-teal-500  dark:bg-gray-900">
-			<div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+		<section className="dark:bg-gray-900">
+			<div className="max-w-screen-xl px-4 py-8 bg-matcha mx-auto text-center lg:py-16 lg:px-6">
 				<dl className="grid max-w-screen-md gap-8 mx-auto text-blue-50 sm:grid-cols-3 dark:text-blue-50">
 					{countEnd.map((endValue, index) => (
 						<div className="flex flex-col items-center justify-center" key={index}>
