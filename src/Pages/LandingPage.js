@@ -5,7 +5,7 @@ import Paraquien from '../Components/Paraquien';
 import Stats from '../Components/Stats';
 // import Contacto from "./Components/Contacto"
 import Footer from '../Components/Footer';
-import ListaEmail from '../Components/ListaEmail';
+// import ListaEmail from '../Components/ListaEmail';
 import Servicios from '../Components/Servicios';
 function LandingPage() {
 	return (
@@ -13,7 +13,7 @@ function LandingPage() {
 			<Jumbotron />
 			<Paraquien /> {/* <CasosdeExito /> */} 
 			<Servicios />
-			<ListaEmail />
+			{/* <ListaEmail /> */}
 			<Stats /> {/* <Contacto /> */}
 			<Footer />
 		</div>

@@ -8,7 +8,7 @@ const Servicios = () => {
 	return (
 		<div className="contenedor-servicios flex flex-row flex-wrap w-full m-4 items-center max-w-7xl shadow-md justify-items-center self-center w-full ">
 			<h2 className="mb-2 flex bg-red-200 flex-col text-center center justify-center w-full text-xl text-vanilla dark:text-vanilla h-36">
-				No es solo una pagina web...
+				No es solo una imagen colgada de internet
 			</h2>{' '}
 		
 			<TarjetaServicio

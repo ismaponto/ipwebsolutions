@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
-import card from './jumbotron/card-svgrepo-com.svg';
-import microphone from './jumbotron/microphone1-broadcasting-svgrepo-com.svg';
-import clock from './jumbotron/clock-svgrepo-com.svg';
-import setting from './jumbotron/setting-setting-svgrepo-com.svg';
+// import card from './jumbotron/card-svgrepo-com.svg';
+// import microphone from './jumbotron/microphone1-broadcasting-svgrepo-com.svg';
+// import clock from './jumbotron/clock-svgrepo-com.svg';
+// import setting from './jumbotron/setting-setting-svgrepo-com.svg';
 
 const Jumbotron = () => {
 	return (
-		<section className=" flex-col w-full ">
+		<section className=" flex-col w-full py-4 	 ">
 			<NavigationBar />
 			<div className="flex flex-col items-center w-full  mx-auto max-w-screen-xl mb-2 ">
 				<div class="flex flex-row flex-wrap">
@@ -27,24 +27,24 @@ const Jumbotron = () => {
 					</div>
 				</div>
 
-				<div className='flex flex-col self-center items-center   w-full'>
-					<div className="text-vanilla text-center list-none flex flex-wrap items-start">
+				{/* <div className='flex flex-col self-center shadow-md items-center  w-full'>
+					<div className="text-vanilla 	 text-center list-none flex flex-wrap items-start">
 						<div>
-							<div className="mb-4 flex shadow-md max-w-xs flex-col  rounded-xl items-center  m-4">
+							<div className="mb-4 flex max-w-xs flex-col  rounded-xl items-center  m-4">
 								<img src={microphone} alt="visibility" className="w-32" />
 								<p className=" w-full p-2 rounded ">Aumentar tu visibilidad online</p>
 							</div>
-							<div className="mb-4 flex shadow-md max-w-xs flex-col  rounded-xl items-center  m-4">
+							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center  m-4">
 								<img src={card} alt="leads" className="w-32" />
 								<p className=" w-full p-2 rounded ">Generar más leads y ventas</p>
 							</div>
 						</div>
 						<div>
-							<div className="mb-4 flex shadow-md max-w-xs flex-col  rounded-xl items-center  m-4">
+							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center  m-4">
 								<img src={setting} alt="automatizacion" className="w-32" />
 								<p className=" w-full p-2 rounded ">Automatizar tareas repetitivas</p>
 							</div>
-							<div className="mb-4 flex  shadow-md max-w-xs flex-col  rounded-xl items-center m-4 ">
+							<div className="mb-4 flex  max-w-xs flex-col  rounded-xl items-center m-4 ">
 								<img src={clock} alt="time" className="w-32" />
 								<p className=" w-full p-2 rounded ">Ahorrar tiempo y dinero</p>
 							</div>
@@ -55,7 +55,7 @@ const Jumbotron = () => {
 						Te ayudo a crear una solución digital personalizada que se adapte a las necesidades de tu
 						negocio
 					</p>
-				</div>
+				</div> */}
 
 				<div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
 					<Link
