@@ -1,6 +1,6 @@
 import React from 'react';
 import Jumbotron from '../Components/Jumbotron';
-import Paraquien from '../Components/Paraquien';
+import Quemas from '../Components/Quemas';
 // import CasosdeExito from "./Components/CasosdeExito"
 import Stats from '../Components/Stats';
 // import Contacto from "./Components/Contacto"
@@ -11,7 +11,7 @@ function LandingPage() {
 	return (
 		<div className="App overflow-hidden flex flex-col justify-items-center">
 			<Jumbotron />
-			<Paraquien /> {/* <CasosdeExito /> */} 
+			<Quemas /> {/* <CasosdeExito /> */} 
 			<Servicios />
 			{/* <ListaEmail /> */}
 			<Stats /> {/* <Contacto /> */}

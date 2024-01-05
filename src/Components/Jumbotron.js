@@ -10,7 +10,7 @@ const Jumbotron = () => {
 	return (
 		<section className=" flex-col w-full py-4 	 ">
 			<NavigationBar />
-			<div className="flex flex-col items-center w-full  mx-auto max-w-screen-xl mb-2 ">
+			<div className="flex flex-col items-center w-full mx-auto max-w-screen-xl mb-2 ">
 				<div class="flex flex-row flex-wrap">
 					<h1 class="flex max-w-sm mb-2 justify-around text-2xl text-start tracking-tight p-8 md:text-5xl text-4xl">
 						CatalystWeb <br />Solutions
@@ -21,8 +21,8 @@ const Jumbotron = () => {
 							Hola, me llamo Ismael Pontoriero y soy el fundador de CatalystWeb.
 							<br />
 							 Mi enfoque es resolver problemas a
-							través de la informática y el diseño web. Nos especializamos en crear sitios web modernos y
-							atractivos con las últimas tecnologías para garantizar calidad y una experiencia óptima.
+							través de la informática y el diseño web. Me especializo crear sitios web modernos y
+							seguros con las últimas tecnologías para garantizar calidad y una experiencia óptima.
 						</p>
 					</div>
 				</div>
