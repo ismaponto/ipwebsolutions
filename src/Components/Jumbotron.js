@@ -25,7 +25,7 @@ const Jumbotron = () => {
 							Mi enfoque es resolver problemas a través de la informática y el diseño web. Me especializo
 							crear sitios web modernos y seguros con las últimas tecnologías para garantizar calidad y
 							una experiencia óptima.<br />
-							Si Estas buscando una pagina web para tu nuevo restaurante, pintureria, servicios como autonomo estas en el lugar correcto.
+							Si buscas una pagina web para tu nuevo restaurante, pintureria, servicios como autonomo estas en el lugar correcto.
 						</p>
 					</div>
 				</div>
