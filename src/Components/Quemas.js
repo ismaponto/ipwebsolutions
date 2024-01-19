@@ -10,7 +10,7 @@ function Paraquien() {
 				Descubre el crecimiento que puede experimentar tu empresa al conectarla con el mundo online a través de
 				una página web. <br /> ¡Desbloquea su potencial y lleva tu presencia digital a nuevos horizontes! {' '}
 			</h2>{' '}
-			{' '}
+			  {' '}
 			<div className="flex flex-row flex-wrap justify-items-center space-around  justify-center w-full">
 				<Card
 					image={compraweb}
@@ -41,12 +41,12 @@ const Card = ({ image, title, description }) => (
 		<div className="flex center p-3">
 			<img className="md:max-w-xs h-48 " src={image} alt="personas" />
 		</div>{' '}
-		{' '}
-		<div className="flex flex-col max-w-lg rounded flex-0 center text-xl text-matcha justify-center">
+		  {' '}
+		<div className="flex flex-col max-w-lg rounded flex-0 center text-xl text-gray-900 justify-center">
 			<p className="flex h-10 justify-center items-center font-bold mb-4"> {title} </p>  {' '}
 			<p className="flex h-56 justify-center items-center"> {description} </p>  {' '}
 		</div>{' '}
-		   {' '}
+		  {' '}
 	</div>
 );
 

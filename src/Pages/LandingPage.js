@@ -11,7 +11,7 @@ function LandingPage() {
 	return (
 		<div className="App overflow-hidden flex flex-col justify-items-center">
 			<Jumbotron />
-			<Quemas /> {/* <CasosdeExito /> */} 
+			<Quemas /> {/* <CasosdeExito /> */}
 			<Servicios />
 			{/* <ListaEmail /> */}
 			<Stats /> {/* <Contacto /> */}

@@ -5,24 +5,27 @@ import NavigationBar from './NavigationBar';
 // import microphone from './jumbotron/microphone1-broadcasting-svgrepo-com.svg';
 // import clock from './jumbotron/clock-svgrepo-com.svg';
 // import setting from './jumbotron/setting-setting-svgrepo-com.svg';
-
+import logo from './logo/logo500.png';
 const Jumbotron = () => {
 	return (
 		<section className=" flex-col w-full py-4 	 ">
 			<NavigationBar />
 			<div className="flex flex-col items-center w-full mx-auto max-w-screen-xl mb-2 ">
-				<div class="flex flex-row flex-wrap">
-					<h1 class="flex max-w-sm mb-2 justify-around text-2xl text-start tracking-tight p-8 md:text-5xl text-4xl">
-						CatalystWeb <br />Solutions
-					</h1>
-
-					<div class="rounded-lg  flex-1">
-						<p class="mb-2 text- max-w-lg font-normal p-8">
-							Hola, me llamo Ismael Pontoriero y soy el fundador de CatalystWeb.
+				<div class="flex flex-row flex-wrap aling-items-center justify-items-center">
+					<div className="flex flex-row flex-wrap items-center justify-center align-center">
+						<img src={logo} alt="red chilies logo" className="flex max-w-xs" />
+						<h1 class="max-w-sm  justify-around text-2xl text-center tracking-tight p-8 md:text-5xl">
+							Calimera <br />Developement
+						</h1>
+					</div>
+					<div className="flex mb-2  max-w-lg font-normal justify-items-center justify-around align-items-center p-8">
+						<p className="flex mb-2  max-w-lg font-normal justify-items-center justify-around align-items-center p-8">
+							Hola, me llamo Ismael Pontoriero y soy el fundador de Calimera Developement Web.
 							<br />
-							 Mi enfoque es resolver problemas a
-							través de la informática y el diseño web. Me especializo crear sitios web modernos y
-							seguros con las últimas tecnologías para garantizar calidad y una experiencia óptima.
+							Mi enfoque es resolver problemas a través de la informática y el diseño web. Me especializo
+							crear sitios web modernos y seguros con las últimas tecnologías para garantizar calidad y
+							una experiencia óptima.<br />
+							Si Estas buscando una pagina web para tu nuevo restaurante, pintureria, servicios como autonomo estas en el lugar correcto.
 						</p>
 					</div>
 				</div>
@@ -60,7 +63,7 @@ const Jumbotron = () => {
 				<div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 p-9">
 					<Link
 						to="/comprando"
-						className="inline-flex justify-center text-xl items-center py-3 px-5 font-medium text-vanilla rounded-lg bg-matcha  hover:bg-pistache hover:ring-4 hover:ring-pistache dark:focus:ring-pistache m-8"
+						className="inline-flex justify-center text-xl items-center py-3 px-5 font-medium rounded-lg bg-red-500  hover:bg-red-400 hover:ring-4 hover:ring-red-400 dark:focus:ring-pistache m-8"
 					>
 						Quiero mi Página Web
 						<svg

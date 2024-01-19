@@ -7,14 +7,13 @@ const Comprando = () => {
 	};
 
 	return (
-		<section className="flex flex-col sm:flex-row w-full min-h-full text-center items-center flex">
-			<div className="flex mb-8 mt-8 sm:w-7-10 flex-grow-1 bg-matcha rounded-lg flex flex-col justify-center items-center">
-				<h1 className="mb-8 text-lg font-normal  p-4 ">
-Asi trabajo:				</h1>
-				<ul className=" flex flex-col justify-center items-center">
+		<section className="flex flex-row  sm:flex-row w-full min-h-full text-center items-center flex">
+			<div className="flex mb-8 mt-8 flex-grow-1 bg-red-500 rounded-lg flex flex-col justify-center items-center">
+				<h1 className="mb-8 text-lg font-normal  p-4 ">Una vez que realices el pago: </h1>
+				<ul className="p-4 flex flex-col justify-center items-center">
 					<li className="mb-4">
 						<p className="">
-							En una primera reunion definiremos el alcance del servicio que tu empresa necesita y te ayudamos a conseguir el nombre de dominio.
+							Me voy a poenr en contacto contigo via e-amil y agendaremos una llamada.
 						</p>
 					</li>
 					<li className="mb-4">
@@ -25,6 +24,7 @@ Asi trabajo:				</h1>
 							Al final del mes, tu página estará online. ¡Ya no perderas tiempo y podras enfocarte en
 							hacer crecer tu negocio!
 						</p>
+						<p>Si todavia no estas seguro podes hacerme cualquer consulta via email, o tenemos un encuentro online</p>
 					</li>
 				</ul>
 				<p className="mb-8 font-normal p-4 sm:px-16 lg:px-48">
@@ -32,10 +32,10 @@ Asi trabajo:				</h1>
 				</p>
 				<p> ¡Pero apúrate! Los primeros 10 clientes lo obtendrán por solo 650 euros./</p>
 			</div>
-			<div className='flex sm:w-3-10 py-2 justify-center items-center"'>
+			<div className="flex sm:w-3-10 py-2 justify-center items-center&quot;">
 				{' '}
 				<button
-					className="flex justify-center flex-grow-1 text-xl items-center py-3 px-5 font-medium text-gray-200 rounded-lg border-2 hover:border-teal-700 bg-matcha bm-5"
+					className="flex justify-center flex-grow-1 text-xl items-center py-3 px-5 font-medium text-gray-200 rounded-lg border-2 hover:bg-red-400 hover:ring-4 hover:ring-red-400 bg-red-500 bm-5"
 					onClick={redirectToStripe} // Call the redirectToStripe function when the button is clicked
 				>
 					¡Comprar mi Landing Page!{' '}
