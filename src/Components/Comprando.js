@@ -13,7 +13,7 @@ const Comprando = () => {
 				<ul className="p-4 flex flex-col justify-center items-center">
 					<li className="mb-4">
 						<p className="">
-							Me voy a poner en contacto contigo via e-amil y agendaremos una llamada.
+							Me voy a poner en contacto contigo via e-mail y agendamos una llamada.
 						</p>
 					</li>
 					<li className="mb-4">
