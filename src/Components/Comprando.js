@@ -7,13 +7,13 @@ const Comprando = () => {
 	};
 
 	return (
-		<section className="flex flex-row  sm:flex-row w-full min-h-full text-center items-center flex">
-			<div className="flex mb-8 mt-8 flex-grow-1 bg-red-500 rounded-lg flex flex-col justify-center items-center">
+		<section className="flex flex-col w-full min-h-full text-center items-center flex">
+			<div className="flex mb-8 mt-8  flex flex-col justify-center items-center">
 				<h1 className="mb-8 text-lg font-normal  p-4 ">Una vez que realices el pago: </h1>
 				<ul className="p-4 flex flex-col justify-center items-center">
 					<li className="mb-4">
 						<p className="">
-							Me voy a poenr en contacto contigo via e-amil y agendaremos una llamada.
+							Me voy a poner en contacto contigo via e-amil y agendaremos una llamada.
 						</p>
 					</li>
 					<li className="mb-4">
