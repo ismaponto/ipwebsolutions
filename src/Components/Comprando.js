@@ -3,12 +3,12 @@ import * as React from 'react';
 const Comprando = () => {
 	const redirectToStripe = () => {
 		// Redirect to the specified URL when the button is clicked
-		window.location.href = 'https://buy.stripe.com/cN202Gda0chN8RW4gg';
+		window.location.href = 'https://buy.stripe.com/14k3eS1riepVc48aEF';
 	};
 
 	return (
 		<section className="flex flex-col w-full min-h-full text-center items-center flex">
-			<div className="flex mb-8 mt-8  flex flex-col justify-center items-center">
+			<div className="flex mb-8 mt-8 flex flex-col justify-center items-center">
 				<h1 className="mb-8 text-lg font-normal  p-4 ">Una vez que realices el pago: </h1>
 				<ul className="p-4 flex flex-col justify-center items-center">
 					<li className="mb-4">
@@ -30,7 +30,7 @@ const Comprando = () => {
 				<p className="mb-8 font-normal p-4 sm:px-16 lg:px-48">
 					Una landing page con formulario de contacto, y sincronizacion con redes por solo 950 Euros
 				</p>
-				<p> ¡Pero apúrate! Los primeros 10 clientes lo obtendrán por solo 650 euros./</p>
+				<p> ¡Pero apúrate! Los primeros 10 clientes lo obtendrán por solo 750 euros./</p>
 			</div>
 			<div className="flex sm:w-3-10 py-2 justify-center items-center&quot;">
 				{' '}
