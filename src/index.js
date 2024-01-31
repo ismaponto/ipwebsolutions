@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
-
+import ThankYouPage from './Pages/ThanksPage';
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -16,6 +16,10 @@ const router = createBrowserRouter([
 	{
 		path: '/comprando',
 		element: <ComprandoPage />
+	},
+	{
+		path: '/ThankYouPage',
+		element: <ThankYouPage />
 	}
 ]);
 
