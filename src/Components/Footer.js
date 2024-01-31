@@ -35,7 +35,7 @@ function Footer() {
 					{' '}
 					<li className="flex ml-4">
 						<a href="mailto:info@calimeradev.com" className="hover:underline">
-							hola @calimeradev.com{' '}
+							info@calimeradev.com{' '}
 						</a>{' '}
 					</li>{' '}
 					{' '}
