@@ -10,10 +10,10 @@ const LanguageSelector = () => {
   };
 
   const languages = [
-    { code: 'en', name: 'English', flag: '/flags/gb-nir.png' },
-    { code: 'es', name: 'Español', flag: '/flags/ar.png' },
-    { code: 'fr', name: 'Français', flag: '/flags/fr.png' },
-    { code: 'it', name: 'Italiano', flag: '/flags/it.png' },
+    { code: 'en', name: 'En', flag: '/flags/gb-nir.png' },
+    { code: 'es', name: 'Es', flag: '/flags/ar.png' },
+    { code: 'fr', name: 'Fr', flag: '/flags/fr.png' },
+    { code: 'it', name: 'It', flag: '/flags/it.png' },
   ];
 
   return (
