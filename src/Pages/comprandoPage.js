@@ -6,7 +6,7 @@ import NavigationBar from '../Components/NavigationBar';
 function LandingPage() {
 	return (
 		<div>
-			<NavigationBar />
+			{/* <NavigationBar /> */}
 			<div className="flex flex-col items-center overflow-hidden bg-center bg-repeat bg-blend-multiply">
 				<Comprando />
 				<Footer className="w-full" />

@@ -7,14 +7,13 @@ import Stats from '../Components/Stats';
 import Footer from '../Components/Footer';
 // import ListaEmail from '../Components/ListaEmail';
 import Servicios from '../Components/Servicios';
+import LanguageSelector from '../Components/LanguageSelector';
+
 function LandingPage() {
 	return (
 		<div className="App overflow-hidden flex flex-col justify-items-center">
-			<Jumbotron />
-			<Quemas /> {/* <CasosdeExito /> */}
-			<Servicios />
-			{/* <ListaEmail /> */}
-			<Stats /> {/* <Contacto /> */}
+			<LanguageSelector /> <Jumbotron />
+			<Quemas /> {/* <CasosdeExito /> */} <Servicios /> {/* <ListaEmail /> */} <Stats /> {/* <Contacto /> */}{' '}
 			<Footer />
 		</div>
 	);
