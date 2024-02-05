@@ -34,7 +34,6 @@ root.render(
 			{/* <!-- Enlace a la fuente Kalnia desde Google Fonts --> */}  {' '}
 			<link href="https://fonts.googleapis.com/css2?family=Mina&display=swap" rel="stylesheet" />  {' '}
 		</head>{' '}
-		{' '}
 		<I18nextProvider i18n={i18n}>
 			<RouterProvider router={router} /> {' '}
 		</I18nextProvider>,{' '}
